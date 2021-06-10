@@ -1,0 +1,9 @@
+name:Dxlibbuid
+on:push
+jobs:
+  build:
+    - name: Setup MSYS2
+      steps:
+       - uses: msys2/setup-msys2@v2
+         run:mingw32-make
+         shell:cmd
