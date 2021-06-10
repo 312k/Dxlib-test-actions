@@ -10,5 +10,6 @@ jobs:
 
     steps:
       - name: Setup MSYS2
-        uses: msys2/setup-msys2@v2
+      - uses: msys2/setup-msys2@v2
+      - uses: actions/checkout@v2
       - run: mingw32-make
