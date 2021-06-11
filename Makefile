@@ -1,5 +1,6 @@
 # 参考:https://qiita.com/C_Assembly/items/e921b7c0745651d31d79
 # [C++]DXライブラリ(DxLib)をMinGWで使う by @C_Assembly
+all:build run
 build:
 	g++ -o main -g3 -Wall -Wextra  main.cpp \
      -I ./7_3_0 \
@@ -23,3 +24,5 @@ build:
      -lopus \
      -lsilk_common \
      -lcelt
+run:
+	main.exe
